@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNEME - Your Mind. Remembered.</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Cyber-neoclassical typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background-canvas-container">
+        <canvas id="background-canvas"></canvas>
+    </div>
+    
+    <header>
+        <nav class="container">
+            <a href="#" class="logo-link">
+                <div class="logo">
+                    <img src="mnelogo.png" alt="MNEME Logo">
+                    <span>MNEME</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>MNEME</h1>
+                    <p class="slogan">Your Mind. Remembered.</p>
+                    <a href="https://note-application-kappa.vercel.app/" class="cta-button" target="_blank" rel="noopener noreferrer">Start Remembering</a>
+                </div>
+                <div class="hero-visual">
+                    <!-- Abstract Brain / Neural Network Visualization - Placeholder -->
+                    <svg id="neural-network-visual" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                        <!-- Nodes -->
+                        <circle cx="20" cy="20" r="2" class="node"></circle>
+                        <circle cx="80" cy="30" r="2" class="node"></circle>
+                        <circle cx="40" cy="60" r="2" class="node"></circle>
+                        <circle cx="70" cy="80" r="2" class="node"></circle>
+                        <circle cx="50" cy="40" r="2" class="node"></circle>
+                        <circle cx="30" cy="80" r="2" class="node"></circle>
+                        <circle cx="60" cy="10" r="2" class="node"></circle>
+                        <!-- Connections (Lines) - will be animated via CSS/JS -->
+                        <line x1="20" y1="20" x2="50" y2="40" class="connection"></line>
+                        <line x1="80" y1="30" x2="50" y2="40" class="connection"></line>
+                        <line x1="40" y1="60" x2="50" y2="40" class="connection"></line>
+                        <line x1="70" y1="80" x2="40" y2="60" class="connection"></line>
+                        <line x1="30" y1="80" x2="40" y2="60" class="connection"></line>
+                        <line x1="60" y1="10" x2="80" y2="30" class="connection"></line>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section reveal-on-scroll">
+            <div class="container">
+                <h2>AI-Powered Memory</h2>
+                <div class="feature-grid">
+                    <div class="feature-card glassmorphism">
+                        <h3>Smart Note Storage</h3>
+                        <p>MNEME intelligently categorizes and links your notes, creating a rich tapestry of your knowledge.</p>
+                        <div class="feature-icon">📝</div>
+                    </div>
+                    <div class="feature-card glassmorphism">
+                        <h3>AI-Driven Insights</h3>
+                        <p>Receive intelligent suggestions and connections between your thoughts, powered by advanced AI.</p>
+                        <div class="feature-icon">💡</div>
+                    </div>
+                    <div class="feature-card glassmorphism">
+                        <h3>Digital Mind Mapping</h3>
+                        <p>Visualize your ideas and memories as an evolving neural network, just like your own brain.</p>
+                        <div class="feature-icon">🧠</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="section reveal-on-scroll">
+            <div class="container">
+                <h2>How MNEME Works</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-icon">1</div>
+                        <h3>Capture</h3>
+                        <p>Effortlessly capture notes, ideas, and multimedia in any format.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">2</div>
+                        <h3>Connect</h3>
+                        <p>Our AI analyzes and connects your input, building a contextual web.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">3</div>
+                        <h3>Recall & Grow</h3>
+                        <p>Access your memories instantly, discover new insights, and expand your digital mind.</p>
+                    </div>
+                </div>
+                <div class="media-placeholder glassmorphism">
+                    <!-- Placeholder for app screenshots/video -->
+                    <p>App Demo Video / Screenshots Here</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="section reveal-on-scroll">
+            <div class="container">
+                <h2>Your Memory Timeline</h2>
+                <p class="section-description">Experience your thoughts and memories unfold through a dynamic, interactive timeline.</p>
+                <div class="timeline-visual glassmorphism">
+                    <!-- Placeholder for interactive timeline animation -->
+                    <p>Interactive Memory Timeline Visualization</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MNEME. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
